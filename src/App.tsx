@@ -1,11 +1,9 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
-import "./App.css";
 
 import styles from "./App.module.scss";
-
-const a = styles;
+import Child from "./Child";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -32,7 +30,11 @@ function App() {
         </a>
       </div>
 
-      <p className={styles.app}>
+      {/* TODO: think about a nice way to build class names, keeping it type-safe */}
+      <p className={[
+        styles.app, 
+        name.length === 0 ? "" : styles.appExample
+      ].join(" ")}>
         Click on the Tauri, Vite, and React logos <code>to learn mode</code>
       </p>
 
@@ -52,6 +54,12 @@ function App() {
       </form>
 
       <p>{greetMsg}</p>
+
+      {/* TODO: example of allowing to extend styles from the parent */}
+      <Child mixClassName={{
+        childDiv1: styles.appDiv1Extension,
+        childDiv1Mod: [styles.appSubtitle, styles.appSubtitle].join(" ")
+      }}/>
     </div>
   );
 }

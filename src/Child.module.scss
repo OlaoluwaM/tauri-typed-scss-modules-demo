@@ -1,0 +1,15 @@
+.child {
+  color: aqua;
+
+  &__div1 {
+    color: tomato;
+
+    &_mod {
+      color: blue;
+    }
+  }
+
+  &__div2 {
+    color: steelblue;
+  }
+}
