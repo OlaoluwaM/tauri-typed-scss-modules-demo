@@ -31,10 +31,12 @@ function App() {
       </div>
 
       {/* TODO: think about a nice way to build class names, keeping it type-safe */}
-      <p className={[
-        styles.app, 
-        name.length === 0 ? "" : styles.appExample
-      ].join(" ")}>
+      <p
+        className={[
+          styles.app,
+          name.length === 0 ? "" : styles.appExample,
+        ].join(" ")}
+      >
         Click on the Tauri, Vite, and React logos <code>to learn mode</code>
       </p>
 
@@ -56,10 +58,10 @@ function App() {
       <p>{greetMsg}</p>
 
       {/* TODO: example of allowing to extend styles from the parent */}
-      <Child mixClassName={{
+      {/* <Child mixClassName={{
         childDiv1: styles.appDiv1Extension,
         childDiv1Mod: [styles.appSubtitle, styles.appSubtitle].join(" ")
-      }}/>
+      }}/> */}
     </div>
   );
 }

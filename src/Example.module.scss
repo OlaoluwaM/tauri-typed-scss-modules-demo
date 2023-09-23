@@ -1,0 +1,24 @@
+@use "@src/inner/variables.scss";
+
+.child {
+  // color: variables.$blue;
+
+  &__div1 {
+    color: variables.$red;
+  }
+
+  &__div2 {
+    color: variables.$green;
+
+    &_open {
+      color: variables.$green;
+    }
+  }
+}
+.another-class {
+  color: variables.$brown;
+}
+
+.-aaa {
+  color: aliceblue;
+}

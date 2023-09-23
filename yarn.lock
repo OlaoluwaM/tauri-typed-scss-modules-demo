@@ -627,6 +627,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.6.3":
+  version: 20.6.3
+  resolution: "@types/node@npm:20.6.3"
+  checksum: 444a6f1f41cfa8d3e20ce0108e6e43960fb2ae0e481f233bb1c14d6252aa63a92e021de561cd317d9fdb411688f871065f40175a1f18763282dee2613a08f8a3
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.6
   resolution: "@types/prop-types@npm:15.7.6"
@@ -1114,10 +1121,13 @@ __metadata:
   dependencies:
     "@tauri-apps/api": ^1.4.0
     "@tauri-apps/cli": ^1.4.0
+    "@types/node": ^20.6.3
     "@types/react": ^18.2.15
     "@types/react-dom": ^18.2.7
     "@vitejs/plugin-react": ^4.0.3
     clsx: ^2.0.0
+    postcss: ^8.4.30
+    postcss-import: ^15.1.0
     react: ^18.2.0
     react-dom: ^18.2.0
     sass: ^1.67.0
@@ -1615,6 +1625,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"function-bind@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "function-bind@npm:1.1.1"
+  checksum: b32fbaebb3f8ec4969f033073b43f5c8befbb58f1a79e12f1d7490358150359ebd92f49e72ff0144f65f2c48ea2a605bff2d07965f548f6474fd8efd95bf361a
+  languageName: node
+  linkType: hard
+
 "gauge@npm:^4.0.3":
   version: 4.0.4
   resolution: "gauge@npm:4.0.4"
@@ -1734,6 +1751,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"has@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "has@npm:1.0.3"
+  dependencies:
+    function-bind: ^1.1.1
+  checksum: b9ad53d53be4af90ce5d1c38331e712522417d017d5ef1ebd0507e07c2fbad8686fffb8e12ddecd4c39ca9b9b47431afbb975b8abf7f3c3b82c98e9aad052792
+  languageName: node
+  linkType: hard
+
 "header-case@npm:^2.0.4":
   version: 2.0.4
   resolution: "header-case@npm:2.0.4"
@@ -1848,6 +1874,15 @@ __metadata:
   dependencies:
     binary-extensions: ^2.0.0
   checksum: 84192eb88cff70d320426f35ecd63c3d6d495da9d805b19bc65b518984b7c0760280e57dbf119b7e9be6b161784a5a673ab2c6abe83abb5198a432232ad5b35c
+  languageName: node
+  linkType: hard
+
+"is-core-module@npm:^2.13.0":
+  version: 2.13.0
+  resolution: "is-core-module@npm:2.13.0"
+  dependencies:
+    has: ^1.0.3
+  checksum: 053ab101fb390bfeb2333360fd131387bed54e476b26860dc7f5a700bbf34a0ec4454f7c8c4d43e8a0030957e4b3db6e16d35e1890ea6fb654c833095e040355
   languageName: node
   linkType: hard
 
@@ -2293,6 +2328,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"path-parse@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "path-parse@npm:1.0.7"
+  checksum: 49abf3d81115642938a8700ec580da6e830dde670be21893c62f4e10bd7dd4c3742ddc603fe24f898cba7eb0c6bc1777f8d9ac14185d34540c6d4d80cd9cae8a
+  languageName: node
+  linkType: hard
+
 "path-scurry@npm:^1.10.1":
   version: 1.10.1
   resolution: "path-scurry@npm:1.10.1"
@@ -2314,6 +2356,26 @@ __metadata:
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
   checksum: 050c865ce81119c4822c45d3c84f1ced46f93a0126febae20737bd05ca20589c564d6e9226977df859ed5e03dc73f02584a2b0faad36e896936238238b0446cf
+  languageName: node
+  linkType: hard
+
+"pify@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "pify@npm:2.3.0"
+  checksum: 9503aaeaf4577acc58642ad1d25c45c6d90288596238fb68f82811c08104c800e5a7870398e9f015d82b44ecbcbef3dc3d4251a1cbb582f6e5959fe09884b2ba
+  languageName: node
+  linkType: hard
+
+"postcss-import@npm:^15.1.0":
+  version: 15.1.0
+  resolution: "postcss-import@npm:15.1.0"
+  dependencies:
+    postcss-value-parser: ^4.0.0
+    read-cache: ^1.0.0
+    resolve: ^1.1.7
+  peerDependencies:
+    postcss: ^8.0.0
+  checksum: 7bd04bd8f0235429009d0022cbf00faebc885de1d017f6d12ccb1b021265882efc9302006ba700af6cab24c46bfa2f3bc590be3f9aee89d064944f171b04e2a3
   languageName: node
   linkType: hard
 
@@ -2356,6 +2418,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-value-parser@npm:^4.0.0":
+  version: 4.2.0
+  resolution: "postcss-value-parser@npm:4.2.0"
+  checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
+  languageName: node
+  linkType: hard
+
 "postcss@npm:6.0.1":
   version: 6.0.1
   resolution: "postcss@npm:6.0.1"
@@ -2378,7 +2447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.27":
+"postcss@npm:^8.4.27, postcss@npm:^8.4.30":
   version: 8.4.30
   resolution: "postcss@npm:8.4.30"
   dependencies:
@@ -2427,6 +2496,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"read-cache@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "read-cache@npm:1.0.0"
+  dependencies:
+    pify: ^2.3.0
+  checksum: cffc728b9ede1e0667399903f9ecaf3789888b041c46ca53382fa3a06303e5132774dc0a96d0c16aa702dbac1ea0833d5a868d414f5ab2af1e1438e19e6657c6
+  languageName: node
+  linkType: hard
+
 "readable-stream@npm:^3.6.0":
   version: 3.6.2
   resolution: "readable-stream@npm:3.6.2"
@@ -2458,6 +2536,32 @@ __metadata:
   version: 0.1.2
   resolution: "reserved-words@npm:0.1.2"
   checksum: 72e80f71dcde1e2d697e102473ad6d597e1659118836092c63cc4db68a64857f07f509176d239c8675b24f7f03574336bf202a780cc1adb39574e2884d1fd1fa
+  languageName: node
+  linkType: hard
+
+"resolve@npm:^1.1.7":
+  version: 1.22.6
+  resolution: "resolve@npm:1.22.6"
+  dependencies:
+    is-core-module: ^2.13.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: d13bf66d4e2ee30d291491f16f2fa44edd4e0cefb85d53249dd6f93e70b2b8c20ec62f01b18662e3cd40e50a7528f18c4087a99490048992a3bb954cf3201a5b
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>":
+  version: 1.22.6
+  resolution: "resolve@patch:resolve@npm%3A1.22.6#~builtin<compat/resolve>::version=1.22.6&hash=c3c19d"
+  dependencies:
+    is-core-module: ^2.13.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: 9d3b3c67aefd12cecbe5f10ca4d1f51ea190891096497c43f301b086883b426466918c3a64f1bbf1788fabb52b579d58809614006c5d0b49186702b3b8fb746a
   languageName: node
   linkType: hard
 
@@ -2761,6 +2865,13 @@ __metadata:
   dependencies:
     has-flag: ^4.0.0
   checksum: 3dda818de06ebbe5b9653e07842d9479f3555ebc77e9a0280caf5a14fb877ffee9ed57007c3b78f5a6324b8dbeec648d9e97a24e2ed9fdb81ddc69ea07100f4a
+  languageName: node
+  linkType: hard
+
+"supports-preserve-symlinks-flag@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
+  checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
   languageName: node
   linkType: hard
 

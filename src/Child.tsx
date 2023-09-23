@@ -1,7 +1,5 @@
 import { clsx } from "clsx";
-import classes from "./Child.module.scss";
-
-type Classes = typeof classes;
+import { default as classes, Styles as Classes } from "./Child.module.scss";
 
 interface ChildProps {
   customClasses: Partial<Classes>;
