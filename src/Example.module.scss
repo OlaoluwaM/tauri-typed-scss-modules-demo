@@ -1,10 +1,14 @@
 @use "@src/inner/variables.scss";
+@use "@src/inner/mixins.scss";
+
+.another-class {
+  color: orange;
+}
 
 .child {
-  // color: variables.$blue;
-
   &__div1 {
-    color: variables.$red;
+    composes: some-class from "@src/inner/sample.module.scss";
+    // @include mixins.important-text; // This works!
   }
 
   &__div2 {
@@ -14,9 +18,6 @@
       color: variables.$green;
     }
   }
-}
-.another-class {
-  color: variables.$brown;
 }
 
 .-aaa {
